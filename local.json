@@ -12,6 +12,12 @@
     "autoload-dev": {
         "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../packages/*"
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
         "doctrine/doctrine-bundle": "~1.4",
@@ -23,8 +29,8 @@
         "symfony/swiftmailer-bundle": "~2.3,>=2.3.10",
         "symfony/symfony": "2.8.*",
         "twig/twig": "^1.0||^2.0",
-        "okvpn/distribution-bundle": "~1.0",
-        "okvpn/php-rdk": "~1.0"
+        "okvpn/distribution-bundle": "dev-master",
+        "okvpn/php-rdk": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
@@ -48,9 +54,6 @@
     },
     "config": {
         "bin-dir": "bin",
-        "platform": {
-            "php": "5.3.9"
-        },
         "sort-packages": true
     },
     "extra": {
